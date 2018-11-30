@@ -10,11 +10,11 @@ clf.fit(X, y)
 # method 1:pickle
 import pickle
 with open('save/clf.pickle', 'wb') as f:
-  pickle.dump(clf, f)
+    pickle.dump(clf, f)
   
 with open('save/clf.pickle', 'rb') as f:
- clf2 = pickle.load(f)
- print(clf2.predict(X[0:1]))
+    clf2 = pickle.load(f)
+    print(clf2.predict(X[0:1]))
  
  
 # method 2: joblib
